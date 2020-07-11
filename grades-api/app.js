@@ -27,7 +27,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(
   cors({
-    origin: 'https://luizfernando-grades-api.herokuapp.com',
+    origin: 'https://luizfernando-grades-app.herokuapp.com/',
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   })
 );
 
